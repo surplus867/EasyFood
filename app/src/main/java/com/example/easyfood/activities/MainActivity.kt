@@ -1,4 +1,4 @@
-package com.example.easyfood
+package com.example.easyfood.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.easyfood.R
 import com.example.easyfood.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
