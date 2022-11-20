@@ -1,4 +1,4 @@
-package com.example.easyfood
+package com.example.easyfood.activities
 
 import android.content.Intent
 import android.net.Uri
@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
+import com.example.easyfood.R
 import com.example.easyfood.databinding.ActivityMealBinding
 import com.example.easyfood.db.MealDatabase
 import com.example.easyfood.fragments.HomeFragment
@@ -84,8 +85,12 @@ class MealActivity : AppCompatActivity() {
             .into(binding.imgMealDetail)
 
         binding.collapsingToolbar.title = mealName
-        binding.collapsingToolbar.setCollapsedTitleTextColor(ContextCompat.getColor(applicationContext, R.color.white))
-        binding.collapsingToolbar.setExpandedTitleColor(ContextCompat.getColor(applicationContext, R.color.white))
+        binding.collapsingToolbar.setCollapsedTitleTextColor(ContextCompat.getColor(applicationContext,
+            R.color.white
+        ))
+        binding.collapsingToolbar.setExpandedTitleColor(ContextCompat.getColor(applicationContext,
+            R.color.white
+        ))
     }
 
     private fun getMealInformationFromIntent() {

@@ -23,7 +23,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MealActivity"
+            android:name=".activities.MealActivity"
             android:exported="false"
             android:label="@string/title_activity_meal"
             android:theme="@style/Theme.EasyFood.NoActionBar">
