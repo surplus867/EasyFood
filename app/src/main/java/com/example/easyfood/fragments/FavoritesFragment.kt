@@ -44,6 +44,7 @@ class FavoritesFragment : Fragment() {
 
         prepareRecyclerView()
         observeFavorites()
+        onFavoriteMealClick()
 
         val itemTouchHelper = object : ItemTouchHelper.SimpleCallback(
             ItemTouchHelper.UP or ItemTouchHelper.DOWN,
@@ -72,6 +73,10 @@ class FavoritesFragment : Fragment() {
         }
 
         ItemTouchHelper(itemTouchHelper).attachToRecyclerView(binding.rvFavorites)
+    }
+
+    private fun onFavoriteMealClick() {
+        favoritesMealAdapter
     }
 
     private fun prepareRecyclerView() {

@@ -2,6 +2,7 @@ package com.example.easyfood.pojo
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.easyfood.adapters.CategoryMealAdapter
 
 
 import com.google.gson.annotations.SerializedName
