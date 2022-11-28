@@ -72,7 +72,7 @@ class MealBottomSheetFragment : BottomSheetDialogFragment() {
     private var mealName: String? = null
     private var mealThumb: String? = null
     private fun observeBottomSheetMeal() {
-        viewModel.observeRandomMealLivedata().observe(viewLifecycleOwner, Observer { meal ->
+        viewModel.observeBottomSheetMeals().observe(viewLifecycleOwner, Observer { meal ->
             Glide.with(this).load(meal.strMealThumb).into(binding.imgBottomSheet)
             binding.tvBottomSheetArea.text = meal.strArea
             binding.tvBottomSheetCategory.text = meal.strCategory
